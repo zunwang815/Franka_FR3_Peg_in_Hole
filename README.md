@@ -161,12 +161,6 @@ The four retained checkpoints are:
 | Task 2 nominal PPO | `runs/ppo/custom/20260818_141826/model_49.pt` |
 | Task 2 disturbance-robust PPO | `runs/ppo/custom/20260818_232714/model_499.pt` |
 
-## Documentation
-
-- [Research report (PDF, Chinese)](基于几何教师与残差强化学习的Franka机械臂高精度插孔控制研究.pdf)
-- [Implementation report (Chinese)](项目实施报告.md)
-- [Task 1 and Task 2 final report (Chinese)](任务1_任务2_总结报告.md)
-- [File-retention notes (Chinese)](项目文件清理说明.md)
 
 ## Limitations
 
