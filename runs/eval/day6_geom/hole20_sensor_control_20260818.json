@@ -1,0 +1,1853 @@
+{
+  "schema_version": 1,
+  "task": "Isaac-PegInHole-Franka-OSC-Pose6D-HoleRandom20mm-MountStableReward-v0",
+  "seed": 42,
+  "episodes": 128,
+  "num_envs": 64,
+  "max_steps": 600,
+  "controller": {
+    "position_scale": null,
+    "kp_position": 0.8,
+    "kp_orientation": 0.8,
+    "approach_depth_mm": -10.0,
+    "insert_depth_mm": 30.0,
+    "alignment_gate_mm": 1.0,
+    "tilt_gate_deg": 2.0,
+    "hole_xy_noise_std_mm": 0.5,
+    "tip_position_noise_std_mm": 0.5,
+    "tip_orientation_noise_std_deg": 0.25,
+    "measurement_ema_alpha": 0.2,
+    "action_noise_std": 0.02,
+    "action_delay_steps": 1,
+    "action_gain_noise_std_pct": 5.0
+  },
+  "result": {
+    "success": 2,
+    "timeout": 126,
+    "over_insertion": 0,
+    "failure": 0,
+    "success_rate": 0.015625,
+    "reason_counts": {
+      "success": 2,
+      "timeout": 126,
+      "over_insertion": 0,
+      "failure": 0
+    }
+  },
+  "terminal": {
+    "depth_mm": {
+      "mean": -7.3370670434087515,
+      "min": -15.657871961593628,
+      "max": 15.913307666778564
+    },
+    "radial_mm": {
+      "mean": 1.8307825001784295,
+      "min": 0.15503313625231385,
+      "max": 4.518372938036919
+    },
+    "tilt_deg": {
+      "mean": 1.784793118068894,
+      "min": 0.3636945265746472,
+      "max": 2.738811301743791
+    }
+  },
+  "phase_counts": {
+    "approach": 10988,
+    "align": 14682,
+    "insert": 6140
+  },
+  "episodes_detail": [
+    {
+      "episode": 0,
+      "env_id": 27,
+      "reason": "success",
+      "steps": 130,
+      "initial_radial_mm": 19.06503736972809,
+      "hole_offset_xy_mm": [
+        -0.43161772191524506,
+        -19.092964008450508
+      ],
+      "terminal_depth_mm": 15.913307666778564,
+      "terminal_radial_mm": 1.2975976569578052,
+      "terminal_tilt_deg": 1.6683566275410067
+    },
+    {
+      "episode": 1,
+      "env_id": 42,
+      "reason": "success",
+      "steps": 161,
+      "initial_radial_mm": 23.32470379769802,
+      "hole_offset_xy_mm": [
+        19.407521933317184,
+        -15.941038727760315
+      ],
+      "terminal_depth_mm": 15.857696533203125,
+      "terminal_radial_mm": 1.962620997801423,
+      "terminal_tilt_deg": 1.616405141496832
+    },
+    {
+      "episode": 2,
+      "env_id": 0,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 18.642496317625046,
+      "hole_offset_xy_mm": [
+        4.518395289778709,
+        19.50874552130699
+      ],
+      "terminal_depth_mm": -10.136276483535767,
+      "terminal_radial_mm": 2.6775971055030823,
+      "terminal_tilt_deg": 2.494498423340197
+    },
+    {
+      "episode": 3,
+      "env_id": 1,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 29.691094532608986,
+      "hole_offset_xy_mm": [
+        -19.597645848989487,
+        -14.844013378024101
+      ],
+      "terminal_depth_mm": -10.71697473526001,
+      "terminal_radial_mm": 1.2242976808920503,
+      "terminal_tilt_deg": 1.954646034314501
+    },
+    {
+      "episode": 4,
+      "env_id": 2,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 3.4424681216478348,
+      "hole_offset_xy_mm": [
+        -4.063451662659645,
+        2.484166994690895
+      ],
+      "terminal_depth_mm": -3.658384084701538,
+      "terminal_radial_mm": 2.670727903023362,
+      "terminal_tilt_deg": 2.0957381057731004
+    },
+    {
+      "episode": 5,
+      "env_id": 3,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.508501023054123,
+      "hole_offset_xy_mm": [
+        -18.38766410946846,
+        0.8843205869197845
+      ],
+      "terminal_depth_mm": -9.472131729125977,
+      "terminal_radial_mm": 2.60550482198596,
+      "terminal_tilt_deg": 1.8482208014317125
+    },
+    {
+      "episode": 6,
+      "env_id": 4,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.116401948034763,
+      "hole_offset_xy_mm": [
+        -13.74932937324047,
+        9.779104962944984
+      ],
+      "terminal_depth_mm": -10.287970304489136,
+      "terminal_radial_mm": 1.2181377969682217,
+      "terminal_tilt_deg": 1.6214822132059727
+    },
+    {
+      "episode": 7,
+      "env_id": 5,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 2.941396087408066,
+      "hole_offset_xy_mm": [
+        -0.7010772824287415,
+        3.8190744817256927
+      ],
+      "terminal_depth_mm": -11.981457471847534,
+      "terminal_radial_mm": 1.2812806526198983,
+      "terminal_tilt_deg": 2.5499079060951018
+    },
+    {
+      "episode": 8,
+      "env_id": 6,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.879435792565346,
+      "hole_offset_xy_mm": [
+        9.449891746044159,
+        18.58827844262123
+      ],
+      "terminal_depth_mm": -9.581267833709717,
+      "terminal_radial_mm": 0.969023210927844,
+      "terminal_tilt_deg": 2.387041405005913
+    },
+    {
+      "episode": 9,
+      "env_id": 7,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.650254346430302,
+      "hole_offset_xy_mm": [
+        -3.7607215344905853,
+        15.916693955659866
+      ],
+      "terminal_depth_mm": 4.699975252151489,
+      "terminal_radial_mm": 2.9677432030439377,
+      "terminal_tilt_deg": 2.155040582911502
+    },
+    {
+      "episode": 10,
+      "env_id": 8,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 8.150864392518997,
+      "hole_offset_xy_mm": [
+        0.7559843361377716,
+        10.918671265244484
+      ],
+      "terminal_depth_mm": -8.464574813842773,
+      "terminal_radial_mm": 2.485371893271804,
+      "terminal_tilt_deg": 2.4038733389983515
+    },
+    {
+      "episode": 11,
+      "env_id": 9,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.99545119702816,
+      "hole_offset_xy_mm": [
+        -8.531555533409119,
+        6.724433973431587
+      ],
+      "terminal_depth_mm": -7.322460412979126,
+      "terminal_radial_mm": 2.717705676332116,
+      "terminal_tilt_deg": 1.3938122646538782
+    },
+    {
+      "episode": 12,
+      "env_id": 10,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.169104672968388,
+      "hole_offset_xy_mm": [
+        -10.336782783269882,
+        1.8486324697732925
+      ],
+      "terminal_depth_mm": -1.02195143699646,
+      "terminal_radial_mm": 1.4415986370295286,
+      "terminal_tilt_deg": 1.4830574373399688
+    },
+    {
+      "episode": 13,
+      "env_id": 11,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.562392935156822,
+      "hole_offset_xy_mm": [
+        16.91356673836708,
+        0.28443895280361176
+      ],
+      "terminal_depth_mm": -6.394326686859131,
+      "terminal_radial_mm": 1.4163354644551873,
+      "terminal_tilt_deg": 2.4299497205889913
+    },
+    {
+      "episode": 14,
+      "env_id": 12,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 8.939147926867008,
+      "hole_offset_xy_mm": [
+        13.196568936109543,
+        3.5288389772176743
+      ],
+      "terminal_depth_mm": -7.007807493209839,
+      "terminal_radial_mm": 0.25072487187571824,
+      "terminal_tilt_deg": 1.5546931016852972
+    },
+    {
+      "episode": 15,
+      "env_id": 13,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.09135128557682,
+      "hole_offset_xy_mm": [
+        -18.63248273730278,
+        -9.778703562915325
+      ],
+      "terminal_depth_mm": -9.346336126327515,
+      "terminal_radial_mm": 0.8294316357932985,
+      "terminal_tilt_deg": 1.7883787393488806
+    },
+    {
+      "episode": 16,
+      "env_id": 14,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.357460990548134,
+      "hole_offset_xy_mm": [
+        -4.484238103032112,
+        15.851303935050964
+      ],
+      "terminal_depth_mm": 4.801958799362183,
+      "terminal_radial_mm": 1.7018975922837853,
+      "terminal_tilt_deg": 1.8765929803571224
+    },
+    {
+      "episode": 17,
+      "env_id": 15,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.799354925751686,
+      "hole_offset_xy_mm": [
+        -16.70440100133419,
+        -12.537529692053795
+      ],
+      "terminal_depth_mm": -2.154022455215454,
+      "terminal_radial_mm": 1.156441867351532,
+      "terminal_tilt_deg": 1.505322146486918
+    },
+    {
+      "episode": 18,
+      "env_id": 16,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.674200512468815,
+      "hole_offset_xy_mm": [
+        10.967185720801353,
+        8.941685780882835
+      ],
+      "terminal_depth_mm": -7.744908332824707,
+      "terminal_radial_mm": 2.908123889937997,
+      "terminal_tilt_deg": 2.4098909491005447
+    },
+    {
+      "episode": 19,
+      "env_id": 17,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.316587544977665,
+      "hole_offset_xy_mm": [
+        -8.831172250211239,
+        -12.874772772192955
+      ],
+      "terminal_depth_mm": -7.013827562332153,
+      "terminal_radial_mm": 1.2717688223347068,
+      "terminal_tilt_deg": 2.4640246805845383
+    },
+    {
+      "episode": 20,
+      "env_id": 18,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 23.791290819644928,
+      "hole_offset_xy_mm": [
+        0.553404912352562,
+        19.5213221013546
+      ],
+      "terminal_depth_mm": -9.489685297012329,
+      "terminal_radial_mm": 2.9579084366559982,
+      "terminal_tilt_deg": 1.8388792370812508
+    },
+    {
+      "episode": 21,
+      "env_id": 19,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.356924548745155,
+      "hole_offset_xy_mm": [
+        -11.727174744009972,
+        5.155736580491066
+      ],
+      "terminal_depth_mm": -12.937784194946289,
+      "terminal_radial_mm": 1.475637429393828,
+      "terminal_tilt_deg": 1.249604986603518
+    },
+    {
+      "episode": 22,
+      "env_id": 20,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.179743058979511,
+      "hole_offset_xy_mm": [
+        -19.70532163977623,
+        -0.5793441087007523
+      ],
+      "terminal_depth_mm": -5.338788032531738,
+      "terminal_radial_mm": 0.48714448348619044,
+      "terminal_tilt_deg": 1.500373994598361
+    },
+    {
+      "episode": 23,
+      "env_id": 21,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.132193505764008,
+      "hole_offset_xy_mm": [
+        15.00122994184494,
+        9.49777103960514
+      ],
+      "terminal_depth_mm": -9.801685810089111,
+      "terminal_radial_mm": 3.2869293354451656,
+      "terminal_tilt_deg": 1.6442534235685606
+    },
+    {
+      "episode": 24,
+      "env_id": 22,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 18.765611574053764,
+      "hole_offset_xy_mm": [
+        18.728751689195633,
+        -8.96501261740923
+      ],
+      "terminal_depth_mm": -11.172086000442505,
+      "terminal_radial_mm": 1.1291848495602608,
+      "terminal_tilt_deg": 2.1530414719188036
+    },
+    {
+      "episode": 25,
+      "env_id": 23,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.385006606578827,
+      "hole_offset_xy_mm": [
+        -15.195327810943127,
+        16.356930136680603
+      ],
+      "terminal_depth_mm": -12.622147798538208,
+      "terminal_radial_mm": 1.5520224114879966,
+      "terminal_tilt_deg": 2.4703712069839496
+    },
+    {
+      "episode": 26,
+      "env_id": 24,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.073521994054317,
+      "hole_offset_xy_mm": [
+        -12.111780233681202,
+        6.435941904783249
+      ],
+      "terminal_depth_mm": -9.664267301559448,
+      "terminal_radial_mm": 1.7284787027165294,
+      "terminal_tilt_deg": 1.149780171058195
+    },
+    {
+      "episode": 27,
+      "env_id": 25,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 7.1944138035178185,
+      "hole_offset_xy_mm": [
+        -1.9897203892469406,
+        5.863379687070847
+      ],
+      "terminal_depth_mm": -4.238933324813843,
+      "terminal_radial_mm": 2.4032730143517256,
+      "terminal_tilt_deg": 1.686092067494591
+    },
+    {
+      "episode": 28,
+      "env_id": 26,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 18.406258895993233,
+      "hole_offset_xy_mm": [
+        -17.955351620912552,
+        -6.783583201467991
+      ],
+      "terminal_depth_mm": -6.556600332260132,
+      "terminal_radial_mm": 4.4899024069309235,
+      "terminal_tilt_deg": 2.0559516135275415
+    },
+    {
+      "episode": 29,
+      "env_id": 28,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.99600839614868,
+      "hole_offset_xy_mm": [
+        17.324071377515793,
+        -14.307871460914612
+      ],
+      "terminal_depth_mm": -3.771841526031494,
+      "terminal_radial_mm": 1.2268932769075036,
+      "terminal_tilt_deg": 2.380966165182598
+    },
+    {
+      "episode": 30,
+      "env_id": 29,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.875518649816513,
+      "hole_offset_xy_mm": [
+        -4.770104773342609,
+        -17.386306077241898
+      ],
+      "terminal_depth_mm": -7.504492998123169,
+      "terminal_radial_mm": 3.563673235476017,
+      "terminal_tilt_deg": 1.538751226719076
+    },
+    {
+      "episode": 31,
+      "env_id": 30,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.009528681635857,
+      "hole_offset_xy_mm": [
+        -17.965974286198616,
+        -3.5106781870126724
+      ],
+      "terminal_depth_mm": -8.799076080322266,
+      "terminal_radial_mm": 1.5464872121810913,
+      "terminal_tilt_deg": 1.6183411799614131
+    },
+    {
+      "episode": 32,
+      "env_id": 31,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.843020260334015,
+      "hole_offset_xy_mm": [
+        -9.349914267659187,
+        3.1945817172527313
+      ],
+      "terminal_depth_mm": -8.436143398284912,
+      "terminal_radial_mm": 1.6145568806678057,
+      "terminal_tilt_deg": 2.02061691051695
+    },
+    {
+      "episode": 33,
+      "env_id": 32,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.30576141178608,
+      "hole_offset_xy_mm": [
+        5.978388711810112,
+        12.863926589488983
+      ],
+      "terminal_depth_mm": -9.067833423614502,
+      "terminal_radial_mm": 2.520432462915778,
+      "terminal_tilt_deg": 1.1925538038485766
+    },
+    {
+      "episode": 34,
+      "env_id": 33,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.232335887849331,
+      "hole_offset_xy_mm": [
+        -9.300529956817627,
+        7.880685850977898
+      ],
+      "terminal_depth_mm": -9.112060070037842,
+      "terminal_radial_mm": 2.6553194038569927,
+      "terminal_tilt_deg": 1.6217235109827446
+    },
+    {
+      "episode": 35,
+      "env_id": 34,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.459360502660275,
+      "hole_offset_xy_mm": [
+        -13.06825503706932,
+        3.0855443328619003
+      ],
+      "terminal_depth_mm": -10.019242763519287,
+      "terminal_radial_mm": 2.4500787258148193,
+      "terminal_tilt_deg": 0.3636945265746472
+    },
+    {
+      "episode": 36,
+      "env_id": 35,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 25.207746773958206,
+      "hole_offset_xy_mm": [
+        14.25880566239357,
+        -17.23916456103325
+      ],
+      "terminal_depth_mm": -8.936971426010132,
+      "terminal_radial_mm": 0.6813318468630314,
+      "terminal_tilt_deg": 2.4725888840300883
+    },
+    {
+      "episode": 37,
+      "env_id": 36,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.71946306526661,
+      "hole_offset_xy_mm": [
+        -8.954590186476707,
+        9.448740631341934
+      ],
+      "terminal_depth_mm": 2.3759007453918457,
+      "terminal_radial_mm": 2.1942444145679474,
+      "terminal_tilt_deg": 2.0130477802561066
+    },
+    {
+      "episode": 38,
+      "env_id": 37,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.795101523399353,
+      "hole_offset_xy_mm": [
+        -11.628793552517891,
+        0.8114632219076157
+      ],
+      "terminal_depth_mm": -9.718447923660278,
+      "terminal_radial_mm": 0.9457803098484874,
+      "terminal_tilt_deg": 1.8551963455649996
+    },
+    {
+      "episode": 39,
+      "env_id": 38,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 20.50367370247841,
+      "hole_offset_xy_mm": [
+        -17.15697906911373,
+        7.678797468543053
+      ],
+      "terminal_depth_mm": -10.995239019393921,
+      "terminal_radial_mm": 1.393945305608213,
+      "terminal_tilt_deg": 1.351615569404951
+    },
+    {
+      "episode": 40,
+      "env_id": 39,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.620857149362564,
+      "hole_offset_xy_mm": [
+        10.804593563079834,
+        -5.989794619381428
+      ],
+      "terminal_depth_mm": -7.160872220993042,
+      "terminal_radial_mm": 1.7986278980970383,
+      "terminal_tilt_deg": 1.8122933660672107
+    },
+    {
+      "episode": 41,
+      "env_id": 40,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.434061393141747,
+      "hole_offset_xy_mm": [
+        4.3996162712574005,
+        -19.434072077274323
+      ],
+      "terminal_depth_mm": -12.224942445755005,
+      "terminal_radial_mm": 1.6908143879845738,
+      "terminal_tilt_deg": 1.988987798574502
+    },
+    {
+      "episode": 42,
+      "env_id": 41,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.855640172958374,
+      "hole_offset_xy_mm": [
+        -6.2249405309557915,
+        16.419440507888794
+      ],
+      "terminal_depth_mm": -9.221255779266357,
+      "terminal_radial_mm": 0.7583339465782046,
+      "terminal_tilt_deg": 1.5880689277862703
+    },
+    {
+      "episode": 43,
+      "env_id": 43,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.888563960790634,
+      "hole_offset_xy_mm": [
+        -1.2330971658229828,
+        -9.060821495950222
+      ],
+      "terminal_depth_mm": -12.85746693611145,
+      "terminal_radial_mm": 3.2650514040142298,
+      "terminal_tilt_deg": 1.6238941237566336
+    },
+    {
+      "episode": 44,
+      "env_id": 44,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.252981662750244,
+      "hole_offset_xy_mm": [
+        16.813594847917557,
+        8.044032379984856
+      ],
+      "terminal_depth_mm": -11.244416236877441,
+      "terminal_radial_mm": 1.4308380195870996,
+      "terminal_tilt_deg": 2.0964851577135706
+    },
+    {
+      "episode": 45,
+      "env_id": 45,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.815953232347965,
+      "hole_offset_xy_mm": [
+        8.509373292326927,
+        -12.981755658984184
+      ],
+      "terminal_depth_mm": -10.68064570426941,
+      "terminal_radial_mm": 2.6740331668406725,
+      "terminal_tilt_deg": 1.7458521673073828
+    },
+    {
+      "episode": 46,
+      "env_id": 46,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.12888041138649,
+      "hole_offset_xy_mm": [
+        -15.793509781360626,
+        10.042686015367508
+      ],
+      "terminal_depth_mm": -0.32001733779907227,
+      "terminal_radial_mm": 0.7659318507649004,
+      "terminal_tilt_deg": 1.849491216617335
+    },
+    {
+      "episode": 47,
+      "env_id": 47,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 20.55833861231804,
+      "hole_offset_xy_mm": [
+        12.553460896015167,
+        -17.83217489719391
+      ],
+      "terminal_depth_mm": -5.715996026992798,
+      "terminal_radial_mm": 4.389322828501463,
+      "terminal_tilt_deg": 2.6816097481054033
+    },
+    {
+      "episode": 48,
+      "env_id": 48,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 25.83879418671131,
+      "hole_offset_xy_mm": [
+        -15.632325783371925,
+        18.747225403785706
+      ],
+      "terminal_depth_mm": -8.160918951034546,
+      "terminal_radial_mm": 1.0864799842238426,
+      "terminal_tilt_deg": 1.8905158940933702
+    },
+    {
+      "episode": 49,
+      "env_id": 49,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.31030698120594,
+      "hole_offset_xy_mm": [
+        4.3976400047540665,
+        4.0991902351379395
+      ],
+      "terminal_depth_mm": -9.568274021148682,
+      "terminal_radial_mm": 2.7137375436723232,
+      "terminal_tilt_deg": 2.387533178626154
+    },
+    {
+      "episode": 50,
+      "env_id": 50,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.17922715842724,
+      "hole_offset_xy_mm": [
+        -12.997608631849289,
+        -14.991764910519123
+      ],
+      "terminal_depth_mm": -8.14393162727356,
+      "terminal_radial_mm": 2.420096891000867,
+      "terminal_tilt_deg": 1.4218901051147428
+    },
+    {
+      "episode": 51,
+      "env_id": 51,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.646292500197887,
+      "hole_offset_xy_mm": [
+        13.62602785229683,
+        -5.859994329512119
+      ],
+      "terminal_depth_mm": -10.078787803649902,
+      "terminal_radial_mm": 0.15503313625231385,
+      "terminal_tilt_deg": 2.085440314938837
+    },
+    {
+      "episode": 52,
+      "env_id": 52,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 20.609930157661438,
+      "hole_offset_xy_mm": [
+        14.818903058767319,
+        -17.411205917596817
+      ],
+      "terminal_depth_mm": 3.264486789703369,
+      "terminal_radial_mm": 2.0502288825809956,
+      "terminal_tilt_deg": 1.7896914163299924
+    },
+    {
+      "episode": 53,
+      "env_id": 53,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.773058265447617,
+      "hole_offset_xy_mm": [
+        9.147575125098228,
+        -11.135312728583813
+      ],
+      "terminal_depth_mm": -7.473975419998169,
+      "terminal_radial_mm": 2.79761990532279,
+      "terminal_tilt_deg": 1.6544574060234423
+    },
+    {
+      "episode": 54,
+      "env_id": 54,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.32493257522583,
+      "hole_offset_xy_mm": [
+        -9.837474673986435,
+        -13.603957369923592
+      ],
+      "terminal_depth_mm": -9.612798690795898,
+      "terminal_radial_mm": 1.3057150645181537,
+      "terminal_tilt_deg": 2.2648582853776706
+    },
+    {
+      "episode": 55,
+      "env_id": 55,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.553495518863201,
+      "hole_offset_xy_mm": [
+        -13.331258669495583,
+        -4.564972594380379
+      ],
+      "terminal_depth_mm": 2.883434295654297,
+      "terminal_radial_mm": 0.8713928400538862,
+      "terminal_tilt_deg": 2.066206929122904
+    },
+    {
+      "episode": 56,
+      "env_id": 56,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.36465096473694,
+      "hole_offset_xy_mm": [
+        9.080316871404648,
+        13.965379446744919
+      ],
+      "terminal_depth_mm": -10.594576597213745,
+      "terminal_radial_mm": 1.3800048036500812,
+      "terminal_tilt_deg": 2.4727470455980565
+    },
+    {
+      "episode": 57,
+      "env_id": 57,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 7.839287631213665,
+      "hole_offset_xy_mm": [
+        -4.052244126796722,
+        8.80749523639679
+      ],
+      "terminal_depth_mm": -12.015551328659058,
+      "terminal_radial_mm": 2.695469418540597,
+      "terminal_tilt_deg": 1.8029827510114256
+    },
+    {
+      "episode": 58,
+      "env_id": 58,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 14.563103206455708,
+      "hole_offset_xy_mm": [
+        -9.216813370585442,
+        11.738628149032593
+      ],
+      "terminal_depth_mm": -1.4115571975708008,
+      "terminal_radial_mm": 2.613465767353773,
+      "terminal_tilt_deg": 2.2501195909224294
+    },
+    {
+      "episode": 59,
+      "env_id": 59,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 20.60583606362343,
+      "hole_offset_xy_mm": [
+        12.118160724639893,
+        13.881996273994446
+      ],
+      "terminal_depth_mm": -3.998786211013794,
+      "terminal_radial_mm": 1.4296153094619513,
+      "terminal_tilt_deg": 1.42656174106362
+    },
+    {
+      "episode": 60,
+      "env_id": 60,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.259486734867096,
+      "hole_offset_xy_mm": [
+        -3.563348203897476,
+        -7.655332796275616
+      ],
+      "terminal_depth_mm": -9.854942560195923,
+      "terminal_radial_mm": 0.9593760478310287,
+      "terminal_tilt_deg": 1.8477973297031718
+    },
+    {
+      "episode": 61,
+      "env_id": 61,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.794015161693096,
+      "hole_offset_xy_mm": [
+        -14.10152018070221,
+        5.939234048128128
+      ],
+      "terminal_depth_mm": -1.3175010681152344,
+      "terminal_radial_mm": 2.675054594874382,
+      "terminal_tilt_deg": 2.090314722128699
+    },
+    {
+      "episode": 62,
+      "env_id": 62,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.512892097234726,
+      "hole_offset_xy_mm": [
+        -19.08651366829872,
+        16.379941254854202
+      ],
+      "terminal_depth_mm": -10.3074312210083,
+      "terminal_radial_mm": 1.4557322720065713,
+      "terminal_tilt_deg": 1.9182628972663123
+    },
+    {
+      "episode": 63,
+      "env_id": 63,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 11.847849935293198,
+      "hole_offset_xy_mm": [
+        -10.675485245883465,
+        -3.1158551573753357
+      ],
+      "terminal_depth_mm": -10.057270526885986,
+      "terminal_radial_mm": 1.5024393796920776,
+      "terminal_tilt_deg": 1.4548147118436718
+    },
+    {
+      "episode": 64,
+      "env_id": 27,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.953677214682102,
+      "hole_offset_xy_mm": [
+        -10.716189630329609,
+        8.767597377300262
+      ],
+      "terminal_depth_mm": -9.496599435806274,
+      "terminal_radial_mm": 1.1358405463397503,
+      "terminal_tilt_deg": 1.5781797743634438
+    },
+    {
+      "episode": 65,
+      "env_id": 42,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.411159679293633,
+      "hole_offset_xy_mm": [
+        10.193657130002975,
+        -17.881708219647408
+      ],
+      "terminal_depth_mm": -10.809600353240967,
+      "terminal_radial_mm": 2.124292077496648,
+      "terminal_tilt_deg": 1.8099162467926349
+    },
+    {
+      "episode": 66,
+      "env_id": 0,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.26491628587246,
+      "hole_offset_xy_mm": [
+        5.511872470378876,
+        17.035242170095444
+      ],
+      "terminal_depth_mm": -10.732531547546387,
+      "terminal_radial_mm": 0.6735993083566427,
+      "terminal_tilt_deg": 0.9017890223431373
+    },
+    {
+      "episode": 67,
+      "env_id": 1,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.188659265637398,
+      "hole_offset_xy_mm": [
+        17.70578697323799,
+        16.784004867076874
+      ],
+      "terminal_depth_mm": -9.359955787658691,
+      "terminal_radial_mm": 0.7706423057243228,
+      "terminal_tilt_deg": 2.2989951439625713
+    },
+    {
+      "episode": 68,
+      "env_id": 2,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.809418961405754,
+      "hole_offset_xy_mm": [
+        5.066283047199249,
+        13.366147875785828
+      ],
+      "terminal_depth_mm": -10.206997394561768,
+      "terminal_radial_mm": 2.3027940187603235,
+      "terminal_tilt_deg": 1.7556888136509647
+    },
+    {
+      "episode": 69,
+      "env_id": 3,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 4.688773769885302,
+      "hole_offset_xy_mm": [
+        -3.084968775510788,
+        3.0770301818847656
+      ],
+      "terminal_depth_mm": -9.196460247039795,
+      "terminal_radial_mm": 0.7147467113099992,
+      "terminal_tilt_deg": 1.5986314951725777
+    },
+    {
+      "episode": 70,
+      "env_id": 4,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.029583565890789,
+      "hole_offset_xy_mm": [
+        -9.190048091113567,
+        7.235601544380188
+      ],
+      "terminal_depth_mm": -9.355634450912476,
+      "terminal_radial_mm": 1.6526954714208841,
+      "terminal_tilt_deg": 1.6428245266498527
+    },
+    {
+      "episode": 71,
+      "env_id": 5,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 8.228464983403683,
+      "hole_offset_xy_mm": [
+        -0.4908684641122818,
+        7.221700623631477
+      ],
+      "terminal_depth_mm": -8.883833885192871,
+      "terminal_radial_mm": 0.5893642082810402,
+      "terminal_tilt_deg": 1.2046352345515656
+    },
+    {
+      "episode": 72,
+      "env_id": 6,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.842182889580727,
+      "hole_offset_xy_mm": [
+        -19.622638821601868,
+        -7.465172559022903
+      ],
+      "terminal_depth_mm": -11.534720659255981,
+      "terminal_radial_mm": 1.798018580302596,
+      "terminal_tilt_deg": 1.7804822936164053
+    },
+    {
+      "episode": 73,
+      "env_id": 7,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.188006848096848,
+      "hole_offset_xy_mm": [
+        -4.077404737472534,
+        13.926342129707336
+      ],
+      "terminal_depth_mm": -3.5357773303985596,
+      "terminal_radial_mm": 1.3284942833706737,
+      "terminal_tilt_deg": 1.6260618550444663
+    },
+    {
+      "episode": 74,
+      "env_id": 8,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.0732893794775,
+      "hole_offset_xy_mm": [
+        18.611103296279907,
+        9.611958637833595
+      ],
+      "terminal_depth_mm": -9.638220071792603,
+      "terminal_radial_mm": 1.9608407747000456,
+      "terminal_tilt_deg": 1.9989989349070365
+    },
+    {
+      "episode": 75,
+      "env_id": 9,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.090739354491234,
+      "hole_offset_xy_mm": [
+        13.360530138015747,
+        -5.036511458456516
+      ],
+      "terminal_depth_mm": -12.347280979156494,
+      "terminal_radial_mm": 1.6841463511809707,
+      "terminal_tilt_deg": 1.9343151224763118
+    },
+    {
+      "episode": 76,
+      "env_id": 10,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 8.034667000174522,
+      "hole_offset_xy_mm": [
+        6.5458994358778,
+        3.4503526985645294
+      ],
+      "terminal_depth_mm": -10.277658700942993,
+      "terminal_radial_mm": 1.917805871926248,
+      "terminal_tilt_deg": 1.8247768174358785
+    },
+    {
+      "episode": 77,
+      "env_id": 11,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 24.659480899572372,
+      "hole_offset_xy_mm": [
+        14.916781336069107,
+        -16.04997366666794
+      ],
+      "terminal_depth_mm": -8.169084787368774,
+      "terminal_radial_mm": 2.5439499877393246,
+      "terminal_tilt_deg": 1.5764428786018507
+    },
+    {
+      "episode": 78,
+      "env_id": 12,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 27.208372950553894,
+      "hole_offset_xy_mm": [
+        -19.515428692102432,
+        19.178036600351334
+      ],
+      "terminal_depth_mm": -6.982237100601196,
+      "terminal_radial_mm": 4.0942900814116,
+      "terminal_tilt_deg": 2.4354209155575828
+    },
+    {
+      "episode": 79,
+      "env_id": 13,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.204867511987686,
+      "hole_offset_xy_mm": [
+        -9.02529340237379,
+        8.29901359975338
+      ],
+      "terminal_depth_mm": -5.748182535171509,
+      "terminal_radial_mm": 1.7911767354235053,
+      "terminal_tilt_deg": 2.157400413269741
+    },
+    {
+      "episode": 80,
+      "env_id": 14,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 7.487618364393711,
+      "hole_offset_xy_mm": [
+        10.737651959061623,
+        0.4772990942001343
+      ],
+      "terminal_depth_mm": -15.657871961593628,
+      "terminal_radial_mm": 2.646623644977808,
+      "terminal_tilt_deg": 1.5952001788882926
+    },
+    {
+      "episode": 81,
+      "env_id": 15,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.302016839385033,
+      "hole_offset_xy_mm": [
+        -4.93316724896431,
+        14.378942549228668
+      ],
+      "terminal_depth_mm": -9.342104196548462,
+      "terminal_radial_mm": 1.2202649377286434,
+      "terminal_tilt_deg": 1.4617926038544862
+    },
+    {
+      "episode": 82,
+      "env_id": 16,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.51502663642168,
+      "hole_offset_xy_mm": [
+        -1.756235957145691,
+        13.931579887866974
+      ],
+      "terminal_depth_mm": -8.337199687957764,
+      "terminal_radial_mm": 0.6610870477743447,
+      "terminal_tilt_deg": 1.555699700814228
+    },
+    {
+      "episode": 83,
+      "env_id": 17,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 7.312862668186426,
+      "hole_offset_xy_mm": [
+        -2.4394262582063675,
+        -7.048053666949272
+      ],
+      "terminal_depth_mm": -6.667077541351318,
+      "terminal_radial_mm": 3.119505476206541,
+      "terminal_tilt_deg": 1.4935762488269058
+    },
+    {
+      "episode": 84,
+      "env_id": 18,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 18.455490469932556,
+      "hole_offset_xy_mm": [
+        2.721363678574562,
+        14.789093285799026
+      ],
+      "terminal_depth_mm": -10.77762246131897,
+      "terminal_radial_mm": 2.8116940520703793,
+      "terminal_tilt_deg": 1.8157458132492408
+    },
+    {
+      "episode": 85,
+      "env_id": 19,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.7835550904274,
+      "hole_offset_xy_mm": [
+        -16.33433811366558,
+        15.808697789907455
+      ],
+      "terminal_depth_mm": -10.865867137908936,
+      "terminal_radial_mm": 2.9485325794667006,
+      "terminal_tilt_deg": 1.54230804772936
+    },
+    {
+      "episode": 86,
+      "env_id": 20,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.572453796863556,
+      "hole_offset_xy_mm": [
+        -13.351855799555779,
+        -1.126682385802269
+      ],
+      "terminal_depth_mm": -7.808476686477661,
+      "terminal_radial_mm": 0.2853416372090578,
+      "terminal_tilt_deg": 1.3402750007834967
+    },
+    {
+      "episode": 87,
+      "env_id": 21,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.600219041109085,
+      "hole_offset_xy_mm": [
+        -8.686876855790615,
+        9.658874943852425
+      ],
+      "terminal_depth_mm": -8.5468590259552,
+      "terminal_radial_mm": 1.285048434510827,
+      "terminal_tilt_deg": 1.8399430390444802
+    },
+    {
+      "episode": 88,
+      "env_id": 22,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.08418284356594,
+      "hole_offset_xy_mm": [
+        10.935032740235329,
+        14.670062810182571
+      ],
+      "terminal_depth_mm": -10.599613189697266,
+      "terminal_radial_mm": 2.392080146819353,
+      "terminal_tilt_deg": 1.3816852637825205
+    },
+    {
+      "episode": 89,
+      "env_id": 23,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 17.816413193941116,
+      "hole_offset_xy_mm": [
+        18.89684796333313,
+        1.5641003847122192
+      ],
+      "terminal_depth_mm": -8.816391229629517,
+      "terminal_radial_mm": 0.4646663146559149,
+      "terminal_tilt_deg": 2.0826230753496184
+    },
+    {
+      "episode": 90,
+      "env_id": 24,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 14.58500511944294,
+      "hole_offset_xy_mm": [
+        16.459781676530838,
+        -3.7788935005664825
+      ],
+      "terminal_depth_mm": -1.5031099319458008,
+      "terminal_radial_mm": 0.8393358439207077,
+      "terminal_tilt_deg": 1.5045419040959498
+    },
+    {
+      "episode": 91,
+      "env_id": 25,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 13.060123659670353,
+      "hole_offset_xy_mm": [
+        7.656499743461609,
+        8.20990838110447
+      ],
+      "terminal_depth_mm": -9.29376482963562,
+      "terminal_radial_mm": 0.8094114600680768,
+      "terminal_tilt_deg": 2.2960987168676628
+    },
+    {
+      "episode": 92,
+      "env_id": 26,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.118565410375595,
+      "hole_offset_xy_mm": [
+        -9.870342910289764,
+        -11.46412082016468
+      ],
+      "terminal_depth_mm": -7.250040769577026,
+      "terminal_radial_mm": 1.2340969406068325,
+      "terminal_tilt_deg": 1.3768612292377875
+    },
+    {
+      "episode": 93,
+      "env_id": 28,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.657427936792374,
+      "hole_offset_xy_mm": [
+        12.560274451971054,
+        -12.426557950675488
+      ],
+      "terminal_depth_mm": -13.508528470993042,
+      "terminal_radial_mm": 0.9530718671157956,
+      "terminal_tilt_deg": 0.6696878818452912
+    },
+    {
+      "episode": 94,
+      "env_id": 29,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.089480862021446,
+      "hole_offset_xy_mm": [
+        19.65750753879547,
+        -0.8956734091043472
+      ],
+      "terminal_depth_mm": -10.413110256195068,
+      "terminal_radial_mm": 1.484293956309557,
+      "terminal_tilt_deg": 1.9401745710105365
+    },
+    {
+      "episode": 95,
+      "env_id": 30,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 3.200082341209054,
+      "hole_offset_xy_mm": [
+        0.14508329331874847,
+        2.5159455835819244
+      ],
+      "terminal_depth_mm": -0.13315677642822266,
+      "terminal_radial_mm": 0.35827141255140305,
+      "terminal_tilt_deg": 2.116183636723299
+    },
+    {
+      "episode": 96,
+      "env_id": 31,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 6.845804862678051,
+      "hole_offset_xy_mm": [
+        -4.7365715727210045,
+        -7.7836280688643456
+      ],
+      "terminal_depth_mm": -10.21796464920044,
+      "terminal_radial_mm": 0.7361501920968294,
+      "terminal_tilt_deg": 2.248553343168381
+    },
+    {
+      "episode": 97,
+      "env_id": 32,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 21.236145868897438,
+      "hole_offset_xy_mm": [
+        17.4255408346653,
+        5.2895210683345795
+      ],
+      "terminal_depth_mm": -12.218594551086426,
+      "terminal_radial_mm": 2.205536002293229,
+      "terminal_tilt_deg": 1.4290288267361697
+    },
+    {
+      "episode": 98,
+      "env_id": 33,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.80244505405426,
+      "hole_offset_xy_mm": [
+        4.479667171835899,
+        -13.050871901214123
+      ],
+      "terminal_depth_mm": -7.527649402618408,
+      "terminal_radial_mm": 1.5668446430936456,
+      "terminal_tilt_deg": 1.2268476500626817
+    },
+    {
+      "episode": 99,
+      "env_id": 34,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 23.795610293745995,
+      "hole_offset_xy_mm": [
+        -19.53158713877201,
+        6.702166050672531
+      ],
+      "terminal_depth_mm": -1.864790916442871,
+      "terminal_radial_mm": 1.287453924305737,
+      "terminal_tilt_deg": 1.5991210276369971
+    },
+    {
+      "episode": 100,
+      "env_id": 35,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 24.406125769019127,
+      "hole_offset_xy_mm": [
+        13.090308755636215,
+        -18.855944275856018
+      ],
+      "terminal_depth_mm": -11.817097663879395,
+      "terminal_radial_mm": 2.5507656391710043,
+      "terminal_tilt_deg": 2.0122699924643714
+    },
+    {
+      "episode": 101,
+      "env_id": 36,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.993304550647736,
+      "hole_offset_xy_mm": [
+        6.747886538505554,
+        16.707517206668854
+      ],
+      "terminal_depth_mm": 10.137796401977539,
+      "terminal_radial_mm": 2.7048822958022356,
+      "terminal_tilt_deg": 1.9014574302569076
+    },
+    {
+      "episode": 102,
+      "env_id": 37,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 25.471340864896774,
+      "hole_offset_xy_mm": [
+        19.834447652101517,
+        -19.271763041615486
+      ],
+      "terminal_depth_mm": -10.272026062011719,
+      "terminal_radial_mm": 2.8741436544805765,
+      "terminal_tilt_deg": 1.4483436412136137
+    },
+    {
+      "episode": 103,
+      "env_id": 38,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.138387627899647,
+      "hole_offset_xy_mm": [
+        7.179904729127884,
+        0.2901647239923477
+      ],
+      "terminal_depth_mm": -8.684247732162476,
+      "terminal_radial_mm": 1.6002781921997666,
+      "terminal_tilt_deg": 2.0398964001097806
+    },
+    {
+      "episode": 104,
+      "env_id": 39,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.18388530611992,
+      "hole_offset_xy_mm": [
+        14.445465058088303,
+        9.449636563658714
+      ],
+      "terminal_depth_mm": -3.536403179168701,
+      "terminal_radial_mm": 3.707811003550887,
+      "terminal_tilt_deg": 2.738811301743791
+    },
+    {
+      "episode": 105,
+      "env_id": 40,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.654083453118801,
+      "hole_offset_xy_mm": [
+        9.244028478860855,
+        0.43076835572719574
+      ],
+      "terminal_depth_mm": -7.428914308547974,
+      "terminal_radial_mm": 1.6107388073578477,
+      "terminal_tilt_deg": 2.2998461428444728
+    },
+    {
+      "episode": 106,
+      "env_id": 41,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 8.686560206115246,
+      "hole_offset_xy_mm": [
+        10.958394035696983,
+        -0.334668904542923
+      ],
+      "terminal_depth_mm": -9.705811738967896,
+      "terminal_radial_mm": 2.9022335074841976,
+      "terminal_tilt_deg": 2.4552711528329323
+    },
+    {
+      "episode": 107,
+      "env_id": 43,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 6.559044122695923,
+      "hole_offset_xy_mm": [
+        0.8875951170921326,
+        -0.5925502628087997
+      ],
+      "terminal_depth_mm": -4.23884391784668,
+      "terminal_radial_mm": 1.1727841338142753,
+      "terminal_tilt_deg": 2.1178476415598433
+    },
+    {
+      "episode": 108,
+      "env_id": 44,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 23.220140486955643,
+      "hole_offset_xy_mm": [
+        15.708394348621368,
+        14.195259660482407
+      ],
+      "terminal_depth_mm": -10.628074407577515,
+      "terminal_radial_mm": 2.215345622971654,
+      "terminal_tilt_deg": 1.2829844412424876
+    },
+    {
+      "episode": 109,
+      "env_id": 45,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 20.30058018863201,
+      "hole_offset_xy_mm": [
+        -16.40361174941063,
+        19.366618245840073
+      ],
+      "terminal_depth_mm": -5.677759647369385,
+      "terminal_radial_mm": 4.518372938036919,
+      "terminal_tilt_deg": 1.9306695090068173
+    },
+    {
+      "episode": 110,
+      "env_id": 46,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 7.1837822906672955,
+      "hole_offset_xy_mm": [
+        2.53172405064106,
+        -1.3979431241750717
+      ],
+      "terminal_depth_mm": -1.826941967010498,
+      "terminal_radial_mm": 0.1871221320470795,
+      "terminal_tilt_deg": 1.8592005439659196
+    },
+    {
+      "episode": 111,
+      "env_id": 47,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 25.68606100976467,
+      "hole_offset_xy_mm": [
+        -18.10421794652939,
+        -15.783261507749557
+      ],
+      "terminal_depth_mm": -10.537892580032349,
+      "terminal_radial_mm": 1.4121736166998744,
+      "terminal_tilt_deg": 1.822845368004646
+    },
+    {
+      "episode": 112,
+      "env_id": 48,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 16.372038051486015,
+      "hole_offset_xy_mm": [
+        -4.0673669427633286,
+        15.480872243642807
+      ],
+      "terminal_depth_mm": -8.946210145950317,
+      "terminal_radial_mm": 0.8128430345095694,
+      "terminal_tilt_deg": 1.827349023988623
+    },
+    {
+      "episode": 113,
+      "env_id": 49,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 22.1452247351408,
+      "hole_offset_xy_mm": [
+        18.337909132242203,
+        10.325554758310318
+      ],
+      "terminal_depth_mm": -7.910966873168945,
+      "terminal_radial_mm": 2.6491160970181227,
+      "terminal_tilt_deg": 1.6125264478219108
+    },
+    {
+      "episode": 114,
+      "env_id": 50,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.01920085400343,
+      "hole_offset_xy_mm": [
+        -4.191111773252487,
+        3.2420996576547623
+      ],
+      "terminal_depth_mm": -0.8151233196258545,
+      "terminal_radial_mm": 0.8321095956489444,
+      "terminal_tilt_deg": 1.4254638948762461
+    },
+    {
+      "episode": 115,
+      "env_id": 51,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.115706250071526,
+      "hole_offset_xy_mm": [
+        -7.331126369535923,
+        -15.245582908391953
+      ],
+      "terminal_depth_mm": -10.400563478469849,
+      "terminal_radial_mm": 1.8853727960959077,
+      "terminal_tilt_deg": 2.0908765051879326
+    },
+    {
+      "episode": 116,
+      "env_id": 52,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 24.461280554533005,
+      "hole_offset_xy_mm": [
+        -14.479653909802437,
+        18.271692097187042
+      ],
+      "terminal_depth_mm": -8.736729621887207,
+      "terminal_radial_mm": 3.229830414056778,
+      "terminal_tilt_deg": 1.2088513822601676
+    },
+    {
+      "episode": 117,
+      "env_id": 53,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 4.655352793633938,
+      "hole_offset_xy_mm": [
+        -1.4751814305782318,
+        7.93471559882164
+      ],
+      "terminal_depth_mm": -9.11054015159607,
+      "terminal_radial_mm": 3.1589996069669724,
+      "terminal_tilt_deg": 0.3690354143404798
+    },
+    {
+      "episode": 118,
+      "env_id": 54,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 12.315338477492332,
+      "hole_offset_xy_mm": [
+        10.508706793189049,
+        8.436739444732666
+      ],
+      "terminal_depth_mm": 1.18294358253479,
+      "terminal_radial_mm": 0.3865632170345634,
+      "terminal_tilt_deg": 1.00755386131055
+    },
+    {
+      "episode": 119,
+      "env_id": 55,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 15.499377623200417,
+      "hole_offset_xy_mm": [
+        4.0100570768117905,
+        -19.91618610918522
+      ],
+      "terminal_depth_mm": -9.043574333190918,
+      "terminal_radial_mm": 1.6194083727896214,
+      "terminal_tilt_deg": 1.3980178469136078
+    },
+    {
+      "episode": 120,
+      "env_id": 56,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 24.002186954021454,
+      "hole_offset_xy_mm": [
+        -19.253674894571304,
+        -3.7026647478342056
+      ],
+      "terminal_depth_mm": -10.080516338348389,
+      "terminal_radial_mm": 1.0813578264787793,
+      "terminal_tilt_deg": 1.4207886303893724
+    },
+    {
+      "episode": 121,
+      "env_id": 57,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 14.520666562020779,
+      "hole_offset_xy_mm": [
+        -2.1267589181661606,
+        13.100076466798782
+      ],
+      "terminal_depth_mm": -7.006615400314331,
+      "terminal_radial_mm": 1.7475574277341366,
+      "terminal_tilt_deg": 2.013825568047842
+    },
+    {
+      "episode": 122,
+      "env_id": 58,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 10.292553342878819,
+      "hole_offset_xy_mm": [
+        2.352152019739151,
+        12.377258390188217
+      ],
+      "terminal_depth_mm": -10.246962308883667,
+      "terminal_radial_mm": 3.079646732658148,
+      "terminal_tilt_deg": 1.3423175475104479
+    },
+    {
+      "episode": 123,
+      "env_id": 59,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 2.520152600482106,
+      "hole_offset_xy_mm": [
+        2.4960488080978394,
+        -5.815749056637287
+      ],
+      "terminal_depth_mm": -14.677345752716064,
+      "terminal_radial_mm": 2.0235786214470863,
+      "terminal_tilt_deg": 0.6926686936380337
+    },
+    {
+      "episode": 124,
+      "env_id": 60,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 2.6330132968723774,
+      "hole_offset_xy_mm": [
+        -5.776232108473778,
+        2.2480078041553497
+      ],
+      "terminal_depth_mm": -5.593240261077881,
+      "terminal_radial_mm": 1.7990850610658526,
+      "terminal_tilt_deg": 1.7175999435792713
+    },
+    {
+      "episode": 125,
+      "env_id": 61,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 19.89700086414814,
+      "hole_offset_xy_mm": [
+        12.18130812048912,
+        14.142479747533798
+      ],
+      "terminal_depth_mm": -10.331958532333374,
+      "terminal_radial_mm": 1.8896055407822132,
+      "terminal_tilt_deg": 2.043538811928101
+    },
+    {
+      "episode": 126,
+      "env_id": 62,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 9.723752737045288,
+      "hole_offset_xy_mm": [
+        5.804963409900665,
+        -12.444686144590378
+      ],
+      "terminal_depth_mm": -12.233763933181763,
+      "terminal_radial_mm": 1.4242028119042516,
+      "terminal_tilt_deg": 2.1484917121579286
+    },
+    {
+      "episode": 127,
+      "env_id": 63,
+      "reason": "timeout",
+      "steps": 239,
+      "initial_radial_mm": 6.5774573013186455,
+      "hole_offset_xy_mm": [
+        -0.7623042911291122,
+        -2.7800574898719788
+      ],
+      "terminal_depth_mm": -0.6394684314727783,
+      "terminal_radial_mm": 2.630652626976371,
+      "terminal_tilt_deg": 1.4954095142888195
+    }
+  ]
+}

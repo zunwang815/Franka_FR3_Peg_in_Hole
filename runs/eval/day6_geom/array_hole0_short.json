@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "task": "Isaac-PegInHoleArray-Franka-OSC-Pose6D-v0",
+  "seed": 42,
+  "episodes": 1,
+  "num_envs": 1,
+  "max_steps": 1,
+  "controller": {
+    "target_hole_id": 0,
+    "position_scale": null,
+    "kp_position": 0.8,
+    "kp_orientation": 0.8,
+    "approach_depth_mm": -10.0,
+    "insert_depth_mm": 30.0,
+    "alignment_gate_mm": 1.0,
+    "tilt_gate_deg": 2.0,
+    "hole_xy_noise_std_mm": 0.0,
+    "tip_position_noise_std_mm": 0.0,
+    "tip_orientation_noise_std_deg": 0.0,
+    "measurement_ema_alpha": 1.0,
+    "action_noise_std": 0.0,
+    "action_delay_steps": 0,
+    "action_gain_noise_std_pct": 0.0
+  },
+  "result": {
+    "success": 0,
+    "timeout": 0,
+    "over_insertion": 0,
+    "failure": 1,
+    "success_rate": 0.0,
+    "reason_counts": {
+      "success": 0,
+      "timeout": 0,
+      "over_insertion": 0,
+      "failure": 1
+    }
+  },
+  "terminal": {
+    "depth_mm": {
+      "mean": -949.1094350814819,
+      "min": -949.1094350814819,
+      "max": -949.1094350814819
+    },
+    "radial_mm": {
+      "mean": 39.30548205971718,
+      "min": 39.30548205971718,
+      "max": 39.30548205971718
+    },
+    "tilt_deg": {
+      "mean": 79.40425491295652,
+      "min": 79.40425491295652,
+      "max": 79.40425491295652
+    }
+  },
+  "phase_counts": {
+    "approach": 1,
+    "align": 0,
+    "insert": 0
+  },
+  "episodes_detail": [
+    {
+      "episode": 0,
+      "env_id": 0,
+      "reason": "failure",
+      "steps": 1,
+      "initial_radial_mm": 39.30548205971718,
+      "hole_offset_xy_mm": [
+        -47.358185052871704,
+        -33.51525217294693
+      ],
+      "terminal_depth_mm": -949.1094350814819,
+      "terminal_radial_mm": 39.30548205971718,
+      "terminal_tilt_deg": 79.40425491295652
+    }
+  ]
+}

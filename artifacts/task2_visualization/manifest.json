@@ -1,0 +1,48 @@
+{
+  "task": "Task 2: 2x3 six-hole array",
+  "no_action_delay": true,
+  "figures": [
+    "artifacts/task2_visualization/final_results_summary.png",
+    "artifacts/task2_visualization/replay/episode_1_final.png",
+    "artifacts/task2_visualization/replay/episode_1_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_1_final.png",
+    "artifacts/task2_visualization/six_holes/episode_1_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_2_final.png",
+    "artifacts/task2_visualization/six_holes/episode_2_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_3_final.png",
+    "artifacts/task2_visualization/six_holes/episode_3_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_4_final.png",
+    "artifacts/task2_visualization/six_holes/episode_4_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_5_final.png",
+    "artifacts/task2_visualization/six_holes/episode_5_initial.png",
+    "artifacts/task2_visualization/six_holes/episode_6_final.png",
+    "artifacts/task2_visualization/six_holes/episode_6_initial.png",
+    "artifacts/task2_visualization/task2_array_layout.png",
+    "artifacts/task2_visualization/task2_success_summary.png"
+  ],
+  "report_protocols": {
+    "task2_basic": {
+      "success": "512/512",
+      "strong_disturbance": false
+    },
+    "task2_fair": {
+      "teacher_success": "110/128",
+      "ppo_success": "128/128",
+      "hole_xy_bias_std_mm": 0.5,
+      "action_noise_std": 0.0305,
+      "action_gain_noise_std_pct": 5.0,
+      "teacher_alignment_gate_mm": 2.0,
+      "episode_length_s": 20.0,
+      "action_delay_steps": 0
+    }
+  },
+  "sources": [
+    "runs/eval/day6_geom/array_stage_random_origin_128.json",
+    "runs/ppo/custom/20260818_141826/model_49.pt",
+    "runs/eval/task2_fair_teacher_action0305_gate2_128.json",
+    "runs/eval/task2_fair_ppo_task1ppo_action02_eval128.json",
+    "runs/ppo/custom/20260818_232714/model_499.pt",
+    "Day6_工作记录.md",
+    "任务1_任务2_总结报告.md"
+  ]
+}

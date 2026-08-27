@@ -1,0 +1,52 @@
+{
+  "task": "Isaac-PegInHole-Franka-OSC-Pose6D-Hole23mm-v0",
+  "stage": "custom",
+  "num_envs": 1024,
+  "max_iterations": 500,
+  "num_steps_per_env": 64,
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint": null,
+  "load_mode": null,
+  "console": "progress",
+  "ppo_overrides": {
+    "learning_rate": 1e-05,
+    "num_learning_epochs": 1,
+    "entropy_coef": 0.0,
+    "init_noise_std": 0.03,
+    "residual_adapter": false,
+    "residual_weight_decay": 0.0,
+    "residual_penalty_coef": 100.0,
+    "residual_freeze_critic": false,
+    "geometric_teacher_residual": true,
+    "teacher_observation_noise_mm": 0.0,
+    "teacher_tilt_noise_deg": 0.0,
+    "hole_xy_bias_std_mm": 0.5,
+    "action_noise_std": 0.02,
+    "action_gain_noise_std_pct": 5.0,
+    "reset_warmup_steps": 20
+  },
+  "physics": {
+    "dt": 0.008333333333333333,
+    "decimation": 4,
+    "policy_dt": 0.03333333333333333,
+    "solver_position_iterations": 16,
+    "solver_velocity_iterations": 4,
+    "enhanced_determinism": true
+  },
+  "task_safety": {
+    "depth_safety_barrier_mm": null,
+    "insertion_gate_radial_mm": null,
+    "insertion_gate_tilt_deg": null,
+    "insertion_gate_hysteresis": 1.3333333333333333,
+    "insertion_gate_start_depth_mm": 0.0,
+    "insertion_soft_gate_min_scale": null,
+    "nullspace_stiffness": 20.0,
+    "position_scale_m": 0.005,
+    "success_depth_range_m": [
+      0.015,
+      0.04
+    ],
+    "over_insertion_depth_m": 0.042
+  }
+}

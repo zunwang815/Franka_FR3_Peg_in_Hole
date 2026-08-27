@@ -1,0 +1,62 @@
+#usda 1.0
+(
+    defaultPrim = "Robot"
+)
+
+def Xform "Robot" (
+    prepend references = @http://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/4.5/Isaac/IsaacLab/Robots/FrankaEmika/panda_instanceable.usd@</panda>
+)
+{
+    def Xform "peg_mount_x" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        float physics:mass = 0.001
+    }
+
+    def Xform "peg_mount_y" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        float physics:mass = 0.001
+    }
+
+    def Cylinder "peg" (
+        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        uniform token axis = "Z"
+        double height = 0.1
+        float physics:mass = 0.25
+        color3f[] primvars:displayColor = [(0.8, 0.15, 0.15)]
+        double radius = 0.01
+    }
+
+    def PhysicsPrismaticJoint "peg_mount_joint_x"
+    {
+        uniform token physics:axis = "X"
+        rel physics:body0 = </Robot/panda_hand>
+        rel physics:body1 = </Robot/peg_mount_x>
+        point3f physics:localPos0 = (0, 0, 0.128)
+        point3f physics:localPos1 = (0, 0, 0)
+        quatf physics:localRot0 = (1, 0, 0, 0)
+        quatf physics:localRot1 = (1, 0, 0, 0)
+        float physics:lowerLimit = -0.005
+        float physics:upperLimit = 0.005
+    }
+
+    def PhysicsPrismaticJoint "peg_mount_joint_y"
+    {
+        uniform token physics:axis = "Y"
+        rel physics:body0 = </Robot/peg_mount_x>
+        rel physics:body1 = </Robot/peg_mount_y>
+        float physics:lowerLimit = -0.005
+        float physics:upperLimit = 0.005
+    }
+
+    def PhysicsFixedJoint "peg_fixed_joint"
+    {
+        rel physics:body0 = </Robot/peg_mount_y>
+        rel physics:body1 = </Robot/peg>
+    }
+}

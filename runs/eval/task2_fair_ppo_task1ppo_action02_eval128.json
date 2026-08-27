@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "task": "Isaac-PegInHoleArray-Franka-OSC-Pose6D-v0",
+  "checkpoint": "runs/ppo/custom/20260818_232714/model_499.pt",
+  "seed": 42,
+  "episodes": 128,
+  "num_envs": 64,
+  "max_steps": 600,
+  "training_protocol": {
+    "learning_rate": 0.00001,
+    "num_learning_epochs": 1,
+    "init_noise_std": 0.03,
+    "residual_penalty_coef": 100.0,
+    "action_noise_std": 0.02,
+    "action_gain_noise_std_pct": 5.0
+  },
+  "evaluation_protocol": {
+    "episode_length_s": 20.0,
+    "teacher_alignment_gate_mm": 2.0,
+    "hole_xy_bias_std_mm": 0.5,
+    "action_noise_std": 0.0305,
+    "action_gain_noise_std_pct": 5.0,
+    "action_delay_steps": 0,
+    "nullspace_stiffness": 20.0,
+    "teacher_observation_noise_mm": 0.0,
+    "teacher_tilt_noise_deg": 0.0
+  },
+  "result": {
+    "success": 128,
+    "timeout": 0,
+    "over_insertion": 0,
+    "success_rate": 1.0
+  },
+  "terminal": {
+    "depth_mm": {
+      "mean": 16.461,
+      "min": 15.012,
+      "max": 26.465
+    },
+    "radial_mm": {
+      "mean": 0.836,
+      "min": 0.084,
+      "max": 1.294
+    },
+    "tilt_deg": {
+      "mean": 0.736,
+      "min": 0.153,
+      "max": 1.612
+    }
+  },
+  "comparison": {
+    "geometric_teacher_success": 110,
+    "geometric_teacher_success_rate": 0.859375,
+    "absolute_gain": 0.140625,
+    "absolute_gain_percentage_points": 14.0625
+  },
+  "evaluator": "scripts/eval_checkpoint_simple.py using RslRlVecEnvWrapper"
+}

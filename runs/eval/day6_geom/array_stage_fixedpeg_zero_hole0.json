@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "task": "Isaac-PegInHoleArray-Franka-OSC-Pose6D-v0",
+  "seed": 42,
+  "episodes": 4,
+  "num_envs": 4,
+  "max_steps": 360,
+  "controller": {
+    "target_hole_id": 0,
+    "array_origin_zero": true,
+    "position_scale": 0.02,
+    "kp_position": 3.0,
+    "kp_orientation": 3.0,
+    "approach_depth_mm": -60.0,
+    "insert_depth_mm": 30.0,
+    "alignment_gate_mm": 1.0,
+    "tilt_gate_deg": 2.0,
+    "hole_xy_noise_std_mm": 0.0,
+    "tip_position_noise_std_mm": 0.0,
+    "tip_orientation_noise_std_deg": 0.0,
+    "measurement_ema_alpha": 1.0,
+    "action_noise_std": 0.0,
+    "action_delay_steps": 0,
+    "action_gain_noise_std_pct": 0.0
+  },
+  "result": {
+    "success": 4,
+    "timeout": 0,
+    "over_insertion": 0,
+    "failure": 0,
+    "success_rate": 1.0,
+    "reason_counts": {
+      "success": 4,
+      "timeout": 0,
+      "over_insertion": 0,
+      "failure": 0
+    }
+  },
+  "terminal": {
+    "depth_mm": {
+      "mean": 18.199749290943146,
+      "min": 18.199443817138672,
+      "max": 18.2000994682312
+    },
+    "radial_mm": {
+      "mean": 0.013300705859364825,
+      "min": 0.013158999536244664,
+      "max": 0.01346431872661924
+    },
+    "tilt_deg": {
+      "mean": 0.03377056801281218,
+      "min": 0.027976454840372228,
+      "max": 0.03956468118525214
+    }
+  },
+  "phase_counts": {
+    "approach": 12,
+    "align": 16,
+    "insert": 64
+  },
+  "episodes_detail": [
+    {
+      "episode": 0,
+      "env_id": 0,
+      "reason": "success",
+      "steps": 23,
+      "initial_radial_mm": 33.541202545166016,
+      "hole_offset_xy_mm": [
+        -29.999999329447746,
+        -14.999999664723873
+      ],
+      "terminal_depth_mm": 18.199443817138672,
+      "terminal_radial_mm": 0.013394477718975395,
+      "terminal_tilt_deg": 0.03956468118525214
+    },
+    {
+      "episode": 1,
+      "env_id": 1,
+      "reason": "success",
+      "steps": 23,
+      "initial_radial_mm": 33.541228622198105,
+      "hole_offset_xy_mm": [
+        -29.999999329447746,
+        -14.999999664723873
+      ],
+      "terminal_depth_mm": 18.1998610496521,
+      "terminal_radial_mm": 0.01346431872661924,
+      "terminal_tilt_deg": 0.027976454840372228
+    },
+    {
+      "episode": 2,
+      "env_id": 2,
+      "reason": "success",
+      "steps": 23,
+      "initial_radial_mm": 33.541202545166016,
+      "hole_offset_xy_mm": [
+        -29.999999329447746,
+        -14.999999664723873
+      ],
+      "terminal_depth_mm": 18.2000994682312,
+      "terminal_radial_mm": 0.013158999536244664,
+      "terminal_tilt_deg": 0.03956468118525214
+    },
+    {
+      "episode": 3,
+      "env_id": 3,
+      "reason": "success",
+      "steps": 23,
+      "initial_radial_mm": 33.541228622198105,
+      "hole_offset_xy_mm": [
+        -29.999999329447746,
+        -14.999999664723873
+      ],
+      "terminal_depth_mm": 18.19959282875061,
+      "terminal_radial_mm": 0.013185027455620002,
+      "terminal_tilt_deg": 0.027976454840372228
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Local/private files
+resume-zh.tex
+tmp/
+
+# Demo videos are distributed as GitHub Release assets.
+/*.webm
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and simulator-generated output
+*.log
+logs/
+outputs/
+
+# TensorBoard events and intermediate training checkpoints
+runs/ppo/**/events.out.tfevents.*
+runs/ppo/**/model_*.pt
+
+# Keep the four checkpoints documented in README.md.
+!runs/ppo/hole20_reward/20260818_130108/model_49.pt
+!runs/ppo/stress/custom/20260818_164739/model_499.pt
+!runs/ppo/custom/20260818_141826/model_49.pt
+!runs/ppo/custom/20260818_232714/model_499.pt

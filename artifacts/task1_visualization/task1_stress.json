@@ -1,0 +1,18 @@
+{
+  "expected": 1,
+  "captured": 1,
+  "protocol": {
+    "name": "task1_stress",
+    "episode_length_s": 20.0,
+    "teacher_alignment_gate_mm": 1.0,
+    "teacher_observation_noise_mm": 0.0,
+    "teacher_tilt_noise_deg": 0.0,
+    "hole_xy_bias_std_mm": 0.5,
+    "action_noise_std": 0.02,
+    "action_gain_noise_std_pct": 5.0,
+    "action_delay_steps": 0,
+    "reset_warmup_steps": 20,
+    "nullspace_stiffness": 20.0,
+    "barrier_mm": null
+  }
+}
