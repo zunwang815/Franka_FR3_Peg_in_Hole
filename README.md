@@ -50,18 +50,28 @@ For the 128 successful Task 2 episodes under the final disturbance protocol:
 | Radial error | 0.836 mm | 0.084 mm | 1.294 mm |
 | Peg tilt | 0.736 deg | 0.153 deg | 1.612 deg |
 
+Detailed evidence is available in the [Task 1 disturbance summary](runs/eval/stress_rl_gain_hole05_bias_500_summary.md), [Task 2 teacher evaluation](runs/eval/task2_fair_teacher_action0305_gate2_128.json), and [Task 2 PPO evaluation](runs/eval/task2_fair_ppo_task1ppo_action02_eval128.json).
+
+## Demo Videos
+
+Click either preview to open the video in GitHub's player.
+
 <table>
   <tr>
     <td align="center"><strong>Task 1: single-hole insertion</strong></td>
     <td align="center"><strong>Task 2: targeted six-hole insertion</strong></td>
   </tr>
   <tr>
-    <td><img src="artifacts/task1_visualization/stress/episode_1_final.png" alt="Single-hole insertion"></td>
-    <td><img src="artifacts/task2_visualization/six_holes/episode_1_final.png" alt="Six-hole insertion"></td>
+    <td><a href="task1_single_hole.mp4"><img src="artifacts/task1_visualization/stress/episode_1_final.png" alt="Play the Task 1 single-hole insertion video"></a></td>
+    <td><a href="task2_six_hole.mp4"><img src="artifacts/task2_visualization/six_holes/episode_1_final.png" alt="Play the Task 2 six-hole insertion video"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="task1_single_hole.mp4"><strong>Play Task 1 video</strong></a></td>
+    <td align="center"><a href="task2_six_hole.mp4"><strong>Play Task 2 video</strong></a></td>
   </tr>
 </table>
 
-Detailed evidence is available in the [Task 1 disturbance summary](runs/eval/stress_rl_gain_hole05_bias_500_summary.md), [Task 2 teacher evaluation](runs/eval/task2_fair_teacher_action0305_gate2_128.json), and [Task 2 PPO evaluation](runs/eval/task2_fair_ppo_task1ppo_action02_eval128.json).
+Both videos are silent H.264 MP4 files at 2560 x 1440 and 30 fps.
 
 ## Method
 
@@ -150,6 +160,7 @@ scripts/                      training, evaluation, visualization, and plotting 
 runs/ppo/                     selected final checkpoints and run configurations
 runs/eval/                    archived evaluation results
 artifacts/                    report figures, screenshots, and replay trajectories
+doc/                          detailed Chinese reports and development notes
 ```
 
 The four retained checkpoints are:
@@ -164,9 +175,9 @@ The four retained checkpoints are:
 ## Documentation
 
 - [Research report (PDF, Chinese)](基于几何教师与残差强化学习的Franka机械臂高精度插孔控制研究.pdf)
-- [Implementation report (Chinese)](项目实施报告.md)
-- [Task 1 and Task 2 final report (Chinese)](任务1_任务2_总结报告.md)
-- [File-retention notes (Chinese)](项目文件清理说明.md)
+- [Implementation report (Chinese)](doc/项目实施报告.md)
+- [Task 1 and Task 2 final report (Chinese)](doc/任务1_任务2_总结报告.md)
+- [File-retention notes (Chinese)](doc/项目文件清理说明.md)
 
 ## Limitations
 
