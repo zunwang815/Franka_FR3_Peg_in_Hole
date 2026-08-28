@@ -105,7 +105,7 @@ A Linux system with an NVIDIA GPU and a working Isaac Sim / Isaac Lab installati
 Clone the repository and activate an Isaac Lab 2.1 environment:
 
 ```bash
-git clone https://github.com/<your-username>/Franka_FR3_Peg_in_Hole.git
+git clone https://github.com/zunwang815/Franka_FR3_Peg_in_Hole.git
 cd Franka_FR3_Peg_in_Hole
 conda activate isaac_lab
 export OMNI_KIT_ACCEPT_EULA=YES
